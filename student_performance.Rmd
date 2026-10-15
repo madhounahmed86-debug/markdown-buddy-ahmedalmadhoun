@@ -1,0 +1,61 @@
+<!--
+AI Assistance Declaration:
+I used ChatGPT (GPT-6) for documentation planning, Markdown formatting suggestions,
+and drafting assistance on 2026-10-14. Prompts used and key responses are documented
+in Appendix_AI_Prompts.md. I must verify the content, preview the files, and make
+my own final edits before submission. All final calculations and verification are my
+responsibility.
+-->
+
+---
+title: "Documentation for the Synthetic Student Performance Script"
+output: html_document
+---
+
+# Purpose
+
+This document explains `student_performance.R`, a beginner-friendly R script that uses fictional student scores to demonstrate basic data summaries and a chart.
+
+## Inputs
+
+The script creates its own small synthetic dataset inside the code. It does not read a file or use real student information.
+
+## Outputs
+
+- The fictional data table printed in the R console.
+- Summary statistics for the scores.
+- The mean score printed in the console.
+- A bar chart, if the `ggplot2` package is installed.
+
+## Dependencies
+
+- Base R
+- `ggplot2` for the chart
+
+Install `ggplot2` if necessary:
+
+```{r eval=FALSE}
+install.packages("ggplot2")
+```
+
+## Example Code
+
+The following code creates the sample data:
+
+```{r}
+scores <- data.frame(
+  student = c("Student A", "Student B", "Student C"),
+  score = c(78, 85, 91)
+)
+
+print(scores)
+mean(scores$score)
+```
+
+## Verification Notes
+
+Before submitting, run `student_performance.R` in R or RStudio and confirm that it prints the records and summary statistics. If `ggplot2` is installed, confirm that the chart appears. Preview or knit this `.Rmd` file and fix any rendering issues.
+
+## AI Assistance Declaration
+
+ChatGPT (GPT-6) was used on October 14, 2026, for documentation planning and Markdown/R Markdown formatting suggestions. The prompts and key response summaries are recorded in `Appendix_AI_Prompts.md`. I must verify the code and rendered output myself and make final edits before submission. I am responsible for the accuracy of this file.
