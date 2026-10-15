@@ -56,8 +56,9 @@ Example code:
 
 ```r
 scores <- data.frame(
-  student = c("Student A", "Student B", "Student C"),
-  score = c(78, 85, 91)
+  student = c("Student A", "Student B", "Student C",
+              "Student D", "Student E"),
+  score = c(78, 85, 91, 74, 88)
 )
 
 mean(scores$score)
